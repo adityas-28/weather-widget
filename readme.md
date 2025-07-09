@@ -7,7 +7,7 @@ It fetches real-time weather data from the OpenWeatherMap API and displays tempe
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/adityas-28/weather.widget.git
+   git clone https://github.com/adityas-28/weather-widget.git
    ```
 2. Create a `config.js` file in the root directory.
 
