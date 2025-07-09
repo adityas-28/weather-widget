@@ -1,0 +1,121 @@
+body {
+  background: linear-gradient(135deg, #74ebd5 0%, #acb6e5 100%);
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+}
+
+.weather-widget {
+  background: #fff;
+  border-radius: 20px;
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.2);
+  padding: 2rem 2.5rem;
+  width: 320px;
+  text-align: center;
+  transition: background 0.5s;
+}
+
+.weather-widget h2 {
+  margin-bottom: 1.5rem;
+  color: #333;
+  font-weight: 600;
+}
+
+.search {
+  display: flex;
+  gap: 0.5rem;
+  margin-bottom: 1.5rem;
+}
+
+#city-input {
+  flex: 1;
+  padding: 0.5rem 1rem;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 1rem;
+  outline: none;
+  transition: border 0.2s;
+}
+
+#city-input:focus {
+  border: 1.5px solid #74ebd5;
+}
+
+#search-btn {
+  padding: 0.5rem 1.2rem;
+  background: rgb(115, 176, 164);
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+#search-btn:hover {
+  background: rgb(86, 156, 142);
+}
+
+.weather-info {
+  margin-top: 1rem;
+}
+
+.city-name {
+  font-size: 1.2rem;
+  font-weight: 500;
+  color: #555;
+}
+
+.temp {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #222;
+  margin: 0.5rem 0;
+}
+
+.desc {
+  font-size: 1rem;
+  color: #888;
+  margin-bottom: 1rem;
+}
+
+.details {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.95rem;
+  color: #666;
+  padding: 0 0.5rem;
+}
+
+.weather-widget.sunny {
+  background: linear-gradient(135deg, #ffe259 0%, #ffa751 100%);
+}
+.weather-widget.cloudy {
+  background: linear-gradient(135deg, #757f9a 0%, #d7dde8 100%);
+}
+.weather-widget.rainy {
+  background: linear-gradient(135deg, #4e54c8 0%, #8f94fb 100%);
+}
+.weather-widget.snowy {
+  background: linear-gradient(135deg, #e0eafc 0%, #cfdef3 100%);
+}
+.weather-widget.thunder {
+  background: linear-gradient(135deg, #232526 0%, #414345 100%);
+}
+.weather-widget.clear {
+  background: linear-gradient(135deg, #f7971e 0%, #ffd200 100%);
+}
+.weather-widget.night {
+  background: linear-gradient(135deg, #232526 0%, #414345 100%);
+}
+
+.weather-icon img {
+  display: block;
+  margin: 0 auto 0.5rem auto;
+  width: 80px;
+  height: 80px;
+  object-fit: contain;
+}
